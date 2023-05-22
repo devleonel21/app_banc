@@ -1,0 +1,18 @@
+<a (click)="dialogRef.close()" style="background: white;box-shadow: 0 0 0 0; padding: 10px;
+cursor: pointer;
+position: absolute;
+right: 10px;">X</a>
+<h2 mat-dialog-title class="mt-5">Create Post</h2>
+<mat-dialog-content>
+    <mat-form-field appearance="outline" class="custom-form-field  ">
+        <mat-label>Titulo</mat-label> 
+        <input matInput type="text" [(ngModel)]="title" placeholder="Ingrese el Titulo del Post" />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="custom-form-field  ">
+        <mat-label>Descripcion</mat-label> 
+        <input matInput type="text" [(ngModel)]="body" placeholder="Ingrese la Descripcion del Post" /> 
+    </mat-form-field> 
+</mat-dialog-content> 
+<mat-dialog-actions  class="d-grid gap-2 mt-5">
+    <button mat-raised-button color="primary" (click)="createPost()" >Ingresar</button> 
+</mat-dialog-actions>

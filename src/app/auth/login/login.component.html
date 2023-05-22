@@ -1,0 +1,53 @@
+<section class="login-container vh-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 px-0 img-logo">
+            <img src="assets/images/image_login.png" class="w-100 vh-100" >
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="d-flex justify-content-md-center align-items-center h-custom-2">
+  
+            <form autocomplete="off" (ngSubmit)="login()">
+              <h5>Bienvenido</h5>
+              <h2>Iniciar Sesión</h2> 
+              <div class="form-outline "> 
+                <mat-form-field appearance="outline" class="custom-form-field  ">
+                    <mat-label>Correo Electronico</mat-label> 
+                    <input matInput type="text" [(ngModel)]="correo" name="correo" required placeholder="Ingrese su Correo Electronico" /> 
+                </mat-form-field>
+              </div>
+  
+              <div class="form-outline ">
+                <mat-form-field appearance="outline" class="custom-form-field">
+                  <mat-label>Contraseña</mat-label> 
+                  <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="password" name="password" required  placeholder="Ingrese su Contraseña" />
+                
+                  <button mat-icon-button matSuffix class="suffix" (click)="hide = !hide">
+                    <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+                  </button>
+                
+                </mat-form-field>
+                  <div class="col text-right" >
+                    <a href="javascript:void(0);">¿Olvidastes tu Contraseña?</a>
+                  </div>
+              </div>
+
+              <div class="row mt-4 mb-4"> 
+                <mat-checkbox color="primary" [(ngModel)]="recordar" name="recordar"    >Recordar Correo</mat-checkbox> 
+              </div>
+   
+                <div class="d-grid gap-2">
+                    <button mat-raised-button color="primary" type="submit"  >Ingresar</button> 
+                    <button mat-raised-button color="basic" class="btn-google" > <img src="assets/images/icon_google.svg" alt=""> Ingresar con Google</button> 
+                </div>  
+   
+  
+            </form>
+  
+          </div>
+  
+        </div>
+        
+      </div>
+    </div>
+  </section>

@@ -1,1 +1,492 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%; 
+}
+
+body {
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+  /******** MENU *************/
+  .menu {
+
+    li{
+      font-size: 14px;
+      font-weight: bolder;
+
+    }
+
+    button{
+      padding: 5px 20px; 
+      border-radius: 10px;
+      margin: 0 10px;
+      box-shadow: 0 0 0 0 !important;
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  /******** BANNER *************/
+  .desktop-bg{
+    background: url('assets/images/desktop_background.png');
+  }
+
+  .tablet-bg{
+    background: url('assets/images/tablet_background.png');
+  }
+
+  .mobile-bg{
+    background: url('assets/images/mobile_background.png');
+  }
+
+  .banner-container{
+    padding-bottom: 250px;
+    margin-top: -65px;
+    padding: 35px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row{
+      --bs-gutter-x: 0 !important;
+
+      .col{
+
+        .text-banner{
+          margin: 25% 15%;
+
+          h1{
+            font-size: 50px;  
+            font-weight: bolder; 
+            line-height: 1.05;
+
+          }
+          p{
+
+            button{
+              padding: 10px 25px !important; 
+              border-radius: 15px !important;
+            }
+          }
+        }
+
+        .imagen-banner{
+           img{
+            max-width: 350px;
+           }
+        }
+      }
+    }
+    
+  }
+
+  /******** HOME *************/
+  
+  .main-container .info-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-container{
+    h1{
+      font-weight: bolder; 
+      font-size: 40px;
+    }
+    .subtitle{
+      margin: 0 25%;    
+      margin-bottom: 20px;
+    }
+
+    .list-services{
+      .item-service{
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .info-container{
+    .text-info{
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left; 
+      font-size: 16px;
+      h3{
+        font-size: 42px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 0px;
+        line-height: 1.05;
+        color: #000;
+      }
+
+      p{
+        margin-top: 20px;
+        color: #000;
+      }
+    }
+
+    .list-company-info{
+      .item-company{
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        .item-company-text{
+
+          div{
+            text-align: left;
+
+            h3{
+              font-size: 32px;
+              font-weight: bold;
+              margin-bottom: 0px;
+              color:black
+            }
+
+            p{
+              margin-top:10px
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+  /******** FOOTER *************/
+
+  .footer-container{
+    background: black; 
+    color: white;
+
+    .container{
+      padding: 80px 20px;
+
+      .footer-first{
+
+        .ff-first{
+
+          p{
+            margin-top:10px
+          }
+
+          ul{
+            padding: 0px;
+
+            li:first-of-type {
+              padding-left: 0px;
+              
+            }
+
+            li{
+              display: inline-block;
+              padding: 0 10px;
+              
+            }
+          }
+        }
+
+        .ff-second{
+          p:first-of-type {
+            margin-top:10px
+          }
+        }
+        
+
+      }
+
+      .footer-second{
+
+        div{
+          margin-bottom:10px
+
+        }
+        
+      }
+
+    }
+  }
+
+
+  /********** LOGIN *************/
+
+  .login-container{
+
+    form{
+      width: 23rem;
+
+      h5{
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+      }
+
+      h2{
+        font-weight: bolder;
+        font-size: 25px;
+        margin: 0px
+      }
+
+      a{
+        color: #0c0ca2; 
+        text-decoration: none;
+      }
+    }
+  }
+
+  /********** PRINCIPAL *************/
+  .principal-container{
+    .div-principal{
+      height: 100vh;
+    }
+
+    .table-info{
+      box-shadow: 0 0 0 0;
+    }
+
+    .list-post{
+      max-height: 200px;
+      overflow-y: scroll;
+      padding: 10px 100px;
+
+      div{
+        position: relative;
+
+        button{
+          right: 0px;
+          position: absolute;
+          z-index: 10;
+        }
+
+        h1{
+          font-weight: bolder; 
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .new-post{
+      h1{
+        font-weight: bolder; 
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .text-right{
+    text-align: right;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    
+  }
+
+  .th-table{
+    background-color: #808692;
+    color: white;
+    text-transform: capitalize; 
+  }
+  tr.detail-row {
+    height: 0;
+  }
+
+  .element-detail {
+    overflow: hidden;
+    display: block;
+  }
+
+  .element-row td {
+    border-bottom-width: 0;
+  }
+
+  .mat-dialog-container {
+    position: relative;
+  }
+
+  .btn-google{
+    background-color: #2D3748;
+    color: white;
+  }
+
+
+
+  @media (max-width: 992px)  {
+    .banner-container{
+      padding-bottom: 250px;
+      margin-top: -65px;
+      padding: 65px 0px;
+
+      .text-banner{
+        margin: 10% 7% !important;
+      }
+
+      .imagen-banner{
+        padding: 0px !important;
+         img{
+          max-width: 400px !important;
+         }
+      }
+    }
+
+     /******** HOME *************/
+  
+    .main-container .info-container{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .main-container{
+      h1{
+        font-weight: bolder; 
+        font-size: 40px;
+      }
+      .subtitle{
+        margin: 0 25%;    
+        margin-bottom: 20px;
+      }
+
+      .list-services{
+        .item-service{
+          padding: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+    }
+
+    .info-container{
+      .text-info{
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: left; 
+        h3{
+          
+          br{
+            display: none;
+          }
+        }
+  
+      }
+
+      
+    }
+
+    .footer-container{
+
+      .ff-second{
+        display: none;
+      }
+    }
+
+    
+  }
+
+  @media (min-width: 600px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+  }
+
+  @media (max-width: 599px) {
+
+    .banner-container{  
+
+      .text-banner{
+        margin: 10% 7% !important;
+
+        h1{
+          font-size: 35px !important;
+        }
+      }
+
+      .imagen-banner{
+        img{
+          max-width: 360px !important;
+        }
+       
+      }
+    }
+
+    .main-container{
+      h1{
+        font-size: 30px;
+      }
+      .subtitle{
+        margin: 0 10% !important;   
+      }
+      .list-services{
+
+        .item-service{
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+
+    .info-container{
+
+      .text-info{
+
+        h3{
+          font-size: 35px !important;
+        }
+  
+      }
+
+      
+    }
+
+    .footer-container{
+
+      .ff-second{
+        display: none;
+      }
+      .footer-second {
+        margin-top: 20px;
+      }
+    }
+
+    .login-container{
+      .img-logo{
+        display: none !important;
+      }
+      form{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-top: 25%;
+        .d-grid{
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+        }
+      }
+    }
+
+    .btn-menu-mobile{
+      display: none;
+    }
+    
+    .row>*{
+      width: auto !important;
+    }
+    .col-sm-12{
+      width: 100% !important;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg container menu">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="assets/images/logo.png" alt="">
+      </a> 
+      <button class="navbar-toggler btn-menu-mobile" mat-raised-button color="primary">
+        <a [routerLink]="['/login']">Iniciar Sesion</a>
+      </button>
+    <button class="navbar-toggler btn-menu-mobile" mat-raised-button color="default">Watch Video</button>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link">Features</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link">Pricing</a>
+          </li>
+           
+          <li class="nav-item">
+            <a class="nav-link">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Ayuda</a>
+          </li>
+        </ul>
+        <div class="d-flex" > 
+            <button mat-raised-button color="primary">
+                <a [routerLink]="['/login']">Iniciar Sesion</a>
+            </button>
+            <button mat-raised-button color="default">Watch Video</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
